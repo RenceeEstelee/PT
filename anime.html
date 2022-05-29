@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+	<head>
+		<title> Animes </title>
+		<style>
+			html {
+				font-family: Bookman Old Style;
+				text-shadow: 1px 1px #ff0000;
+				background-color: #ffbd59;
+			}
+			
+			.flex-container {
+				text-align: center;
+				display: flex;
+				flex-wrap: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.flex-container div:hover {
+				background-color: black; 
+			}
+			
+			.flex-item {
+				text-align: center;
+				border: 2px solid rgba(1, 1, 1, 1);
+				background-color: white;	
+				width: auto ;
+				margin: 25px;
+				line-height: 20px;
+				font-size: 20px;
+				border-radius: 10px;
+				opacity: .8;
+			}
+
+
+			.container {
+				padding: 10px;
+				opacity: .8;
+				display: grid;
+				width: 100%px;
+				height:350px;
+				grid-template-columns: 1fr 1fr 1fr 1fr ;
+				grid-template-rows: 50px 305px; 
+				grid-template-areas:
+				"Header Header Header Header"
+				"Spy Clover Komi Hori" ;
+     
+			}
+			
+			header {
+				border: 2px solid rgba(1, 1, 1, 1);
+				padding: 20px;
+				text-align: left;
+				grid-area: Header;
+				background-color: white;
+					font-size: 20px;
+			}			
+
+
+			.Spy {
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				grid-area: Spy;
+				background-color: white;
+			}
+ 
+			.Clover {
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				grid-area: Clover;
+				background-color: white;
+			}
+ 
+			.Komi{
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				grid-area: Komi;
+				background-color: white;
+			}
+ 
+			.Hori {
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				grid-area: Hori;
+				background-color: white;
+			}
+ 
+			.header {
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				padding: 10px;
+				text-align: center;
+				grid-area: Header;
+				background-color: white;
+			}
+
+			@media screen and (max-width: 500px) {
+				.container{
+					margin: auto;
+					padding: 10px;
+					display: grid;
+					width: 447px ;
+					height: 2500px ;
+					grid-template-columns: 447px ;
+					grid-template-rows: 50px 1fr 1fr 1fr 1fr ; 	
+					grid-template-areas:
+						"Header"
+						"Spy"
+						"Clover"
+						"Komi" 
+						"Hori"	  ; 
+	  
+				}
+			}		
+			
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+<body>
+	<div class="container">
+		<div class="header"> My Favorite Animes </div>
+		<div class="Spy">
+			<img src="spy.jpg" width="250" height="300" class="center" bgcolor="white">
+		</div>
+		<div class="Clover">
+			<img src="clover.jpg" width="250" height="300" class="center" bgcolor="white">
+		</div>
+		<div class="Komi">
+			<img src="komi.jpg" width="250" height="300" class="center" bgcolor="white">
+		</div>
+		<div class="Hori">
+			<img src="hori.jpg" width="250" height="300" class="center" bgcolor="white">
+		</div>
+	</div>
+	
+	<div class="flex-container">
+		<div class="flex-item">
+			<a href="index.html"> Home </a>
+		</div>
+		<div class="flex-item">
+			<a href="anime.html"> My Favorite Animes </a>
+		</div>
+		<div class="flex-item">
+			<a href="artists.html"> Artists I listen to </a>
+		</div>
+		<div class="flex-item">
+			<a href="games.html"> Games I play regularly </a>
+		</div>
+		<div class="flex-item">
+			<a href="movies.html"> Movies I Watch All of the Time </a>
+		</div>
+	</div>
+
+
+</body>
+</html>
+

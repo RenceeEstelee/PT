@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> HOME </title>
+		<style>
+			html {
+				font-family: Bookman Old Style;
+				text-shadow: 1px 1px #ff0000;
+				background-color: #ffbd59; 
+				
+				
+			}
+			.flex-container {
+				text-align: center;
+				display: flex;
+				flex-wrap: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.flex-container div:hover {
+			background-color: black; 
+			}
+ 
+			.flex-item {
+				text-align: center;
+				border: 2px solid rgba(1, 1, 1, 1);
+				background-color: white;	
+				width: auto ;
+				margin: 25px;
+				line-height: 20px;
+				font-size: 20px;
+				border-radius: 10px;
+				opacity: .8;
+			}
+			
+			.container {
+				padding: 10px;
+				display: grid;
+				width: 1480px;
+				height:620px;
+				grid-template-columns: 1fr 1fr 174px;
+				grid-template-rows: 50px 585px; 
+				grid-template-areas:
+					"Header Header"
+					"introduction introduction";
+				
+			}
+			.header {
+				border: 2px solid rgba(1, 1, 1, 1);
+				padding: 20px;
+				text-align: left;
+				grid-area: Header;
+				background-color: white;
+				font-size: 20px;
+			}
+
+			.introduction {
+				opacity: .7;
+				border: 2px solid rgba(1, 1, 1, 1);
+				grid-area: introduction;	
+				background-color: white;
+			}
+			
+			@media screen and (max-width: 500px) {
+			.container{
+				margin: auto;
+				padding: 10px;
+				display: grid;
+				width: 447px ;
+				height: 1165px ;
+				grid-template-columns: 1fr ;
+				grid-template-rows: 1fr 1fr 585px 500px ; 	
+				grid-template-areas:
+					"Header"
+					"introduction"
+					"flex container"
+			}	
+		</style>
+	</head>
+<body> 
+	<div class="container">
+		<div class="header">
+			<b>A website about me and what I like</b>
+		</div>
+		<div class="introduction">
+			<ul>
+				<li>
+					
+					My name is
+					<b> Rence Mathew N. Estella </b>
+					, you can call me by my first name.
+				</li>
+				<li>
+					I am curently
+					<b> 14 </b>
+					years old.
+				</li>
+				<li>
+					I was born at the
+					<b> 8th of August, </b>
+					on the year 2007.
+				</li>
+				<li>
+					I like playing 
+					<b> videogames </b>
+					most of the time.
+				</li>
+				<li>
+					In my free time, or when there is nothing to do, I
+					<b> edit </b>
+					my game recordings or
+					<b> edit some clips from an anime. </b>
+				<li>
+					I also sleep late and wake up early because why not
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="flex-container">
+		<div class="flex-item">
+			<a href="index.html"> Home </a>
+		</div>
+		<div class="flex-item">
+			<a href="anime.html"> My Favorite Animes </a>
+		</div>
+		<div class="flex-item">
+			<a href="artists.html"> Artists I listen to </a>
+		</div>
+		<div class="flex-item">
+			<a href="games.html"> Games I play regularly </a>
+		</div>
+		<div class="flex-item">
+			<a href="movies.html"> Movies I Watch All of the Time </a>
+		</div>
+</body>
+</html>
+
+
+				
